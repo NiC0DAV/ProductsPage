@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Products Page</title>
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav class="navbar navbar-light bg-light">
+        <a href="#" class="navbar-brand">
+            NicShopers
+        </a>
+
+    </nav>
+
+    <div class="container">
+        <!-- Aplication -->
+        <div id="app" class="row pt-5">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Add a product</h4>
+                    </div>
+                    <form action="" id="product-form" class="card-body">
+                        <div class="form-group">
+                            <input type="text" name="name" id="name" placeholder="Product Name" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" step="0.01" name="price" id="price" placeholder="Product Price" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" name="year" id="year" value="2018" min="1900" max="2030" class="form-control" placeholder="Product Year">
+                        </div>
+                        <input type="submit" value="Save" class="btn btn-primary btn-block">
+                    </form>
+                </div>
+            </div>
+            <div id="product-list" class="col-md-8">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
